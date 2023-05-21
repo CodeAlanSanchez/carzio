@@ -6,14 +6,29 @@
     color: white;
 
     .testimonials-content {
+        text-align: center;
 
         .testimonials-header {
             @include h.heading;
+            margin-bottom: 3rem;
+        }
+
+        .testimonials-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonials-name {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            color: white;
         }
 
         .testimonials-text {
+            text-align: center;
             font-size: 1.5rem;
-            font-weight: bolder;
+            font-weight: 400;
             line-height: 1.5;
             margin-bottom: 2rem;
         }
