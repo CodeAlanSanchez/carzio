@@ -10,6 +10,7 @@
 
         .testimonials-header {
             @include h.heading;
+            margin: 0 auto;
             margin-bottom: 3rem;
         }
 
@@ -26,6 +27,8 @@
         }
 
         .testimonials-text {
+            font-family: $cursive;
+            color: #999;
             text-align: center;
             font-size: 1.5rem;
             font-weight: 400;
