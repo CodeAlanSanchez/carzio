@@ -1,5 +1,48 @@
-.about {
-    .about-content {
+@use '../components/mixins/background' as b;
 
+.about {
+    padding: 3rem 5%;
+
+    .about-content {
+        text-align: left;
+
+        .about-heading {
+            font-size: 2rem;
+            font-weight: bolder;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+
+            @include b.blue-shimmer;
+        }
+
+        .about-text {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            line-height: 1.5;
+            margin-bottom: 2rem;
+        }
+
+        .about-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+
+            img {
+                object-fit: cover;
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        hr {
+            margin: 2rem 0 3rem;
+            border-style: dashed;
+            border-width: .5rem;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 5rem 25%;
     }
 }

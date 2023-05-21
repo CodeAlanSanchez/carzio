@@ -10,8 +10,8 @@ export const Home = ({ auth }: PageProps) => {
     return (
         <Main auth={ auth }>
             <Hero/>
-            <About/>
             <Services/>
+            <About/>
             <Testimonials/>
         </Main>
     )

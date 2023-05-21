@@ -12,13 +12,13 @@ export const Header = ({ auth }: PageProps) => {
                             </a>
                         </li>
                         <li className="header-item">
-                            <a href="#about">
-                                About
+                            <a href="#services">
+                                Services
                             </a>
                         </li>
                         <li className="header-item">
-                            <a href="#services">
-                                Services
+                            <a href="#about">
+                                About
                             </a>
                         </li>
                         <li className="header-item">

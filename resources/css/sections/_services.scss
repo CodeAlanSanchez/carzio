@@ -4,7 +4,7 @@
 .services {
     background-color: black;
     color: white;
-    padding: 4rem 0;
+    padding: 3rem 0;
 
     .services-content {
         margin: 0 auto;
@@ -15,8 +15,8 @@
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
-            padding: 0 25%;
             gap: 5rem;
+            padding: 0 5%;
 
             .professional {
                 width: fit-content;
@@ -40,9 +40,9 @@
             .services-gallery {
                 display: grid;
                 grid-template-areas: "l tr" "l br";
-                width: 30rem;
                 gap: 1rem;
                 overflow: clip;
+                max-width: 100%;
 
                 .l {
                     overflow: hidden;
@@ -57,6 +57,14 @@
                 .br {
                     overflow: hidden;
                     grid-area: br;
+                }
+            }
+
+            @media screen and (min-width: 768px) {
+                padding: 5rem 25%;
+
+                .services-gallery {
+                    width: 30rem;
                 }
             }
         }
