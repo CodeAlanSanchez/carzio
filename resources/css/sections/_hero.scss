@@ -17,6 +17,7 @@
         }
 
         .hero-detailing {
+            width: fit-content;
             font-size: 2rem;
             line-height: 1;
             @include b.blue-shimmer;
