@@ -19,8 +19,8 @@ export const About = () => {
                 </p>
                 <hr/>
                 <div className="about-gallery">
-                    <img src="img/orange.jpg" alt="Orange fender of car"/>
                     <img src="img/red.jpg" alt="Red headlight of car"/>
+                    <img src="img/orange.jpg" alt="Orange fender of car"/>
                     <img src="img/green.jpg" alt="Green headlight shot of car"/>
                 </div>
             </div>
