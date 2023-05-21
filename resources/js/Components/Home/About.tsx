@@ -18,7 +18,7 @@ export const About = () => {
                     Get in contact with us (1-800-000-0000 or support@carzio.com) and we can give you an estimate on all
                     your needs.
                 </p>
-                <hr/>
+                <hr className="section-separator"/>
                 <div className="about-gallery">
                     <img src="img/red.jpg" alt="Red headlight of car"/>
                     <img src="img/orange.jpg" alt="Orange fender of car"/>
