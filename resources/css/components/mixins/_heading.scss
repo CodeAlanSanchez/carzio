@@ -1,0 +1,12 @@
+@use 'background' as b;
+
+@mixin heading {
+    font-size: 2rem;
+    font-weight: bolder;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+    width: fit-content;
+
+    @include b.blue-shimmer;
+}

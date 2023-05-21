@@ -1,4 +1,4 @@
-@use '../components/mixins/background' as b;
+@use '../components/mixins/heading' as h;
 
 .about {
     padding: 3rem 5%;
@@ -7,14 +7,7 @@
         text-align: left;
 
         .about-heading {
-            font-size: 2rem;
-            font-weight: bolder;
-            background-clip: text;
-            color: transparent;
-            margin-bottom: 1rem;
-            width: fit-content;
-
-            @include b.blue-shimmer;
+            @include h.heading;
         }
 
         .about-text {
