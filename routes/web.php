@@ -35,4 +35,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+Route::get('/contact-us/email', [\App\Http\Controllers\EmailController::class, 'store'])->name('contact-us.email');
+
+require __DIR__ . '/auth.php';
