@@ -1,0 +1,40 @@
+@use '../components/mixins/font' as f;
+
+.header {
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+
+    .header-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .header-row {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .header-item {
+        font-size: 1.2rem;
+        transition: all 500ms;
+
+        &:hover {
+            text-decoration: underline;
+            color: orange;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .header-container {
+            padding: 0 25%;
+        }
+    }
+}
+

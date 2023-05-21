@@ -1,0 +1,70 @@
+@use '../components/mixins/font' as f;
+@use '../components/mixins/background' as b;
+
+.services {
+    background-color: black;
+    color: white;
+    padding: 4rem 0;
+
+    .services-content {
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column wrap;
+
+        .services-one {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            padding: 0 25%;
+            gap: 5rem;
+
+            .professional {
+                width: fit-content;
+
+                .services-header {
+                    @include b.blue-shimmer;
+                    color: transparent;
+                    background-clip: text;
+                    font-size: 2rem;
+                    font-weight: bolder;
+                }
+
+                .services-text {
+                    color: white;
+                    list-style: circle inside;
+                    font-size: 1.5rem;
+                    font-weight: bolder;
+                }
+            }
+
+            .services-gallery {
+                display: grid;
+                grid-template-areas: "l tr" "l br";
+                width: 30rem;
+                gap: 1rem;
+                overflow: clip;
+
+                .l {
+                    overflow: hidden;
+                    grid-area: l;
+                }
+
+                .tr {
+                    overflow: hidden;
+                    grid-area: tr;
+                }
+
+                .br {
+                    overflow: hidden;
+                    grid-area: br;
+                }
+            }
+        }
+
+        .services-two {
+            margin: 5rem auto 0;
+        }
+
+    }
+}
+
