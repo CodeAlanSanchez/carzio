@@ -1,3 +1,6 @@
+@import 'colors';
+@import 'typography';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,5 +9,4 @@
 
 @import 'components';
 
-@import 'typography';
 @import 'generic';

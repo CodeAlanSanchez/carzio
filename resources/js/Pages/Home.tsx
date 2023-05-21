@@ -5,6 +5,7 @@ import Hero from "@/Components/Home/Hero";
 import About from "@/Components/Home/About";
 import Services from "@/Components/Home/Services";
 import Testimonials from '@/Components/Home/Testimonials'
+import Contact from "@/Components/Home/Contact";
 
 export const Home = ({ auth }: PageProps) => {
     return (
@@ -13,6 +14,7 @@ export const Home = ({ auth }: PageProps) => {
             <Services/>
             <About/>
             <Testimonials/>
+            <Contact/>
         </Main>
     )
 }

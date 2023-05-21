@@ -34,9 +34,9 @@ export const Services = () => {
                     </div>
                 </div>
                 <div className="services-two">
-                    <button className="btn btn-blind btn-lg btn-primary">
+                    <a href="#contact" className="btn btn-blind btn-lg btn-primary">
                         CONTACT US
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>

@@ -2,10 +2,6 @@
 @import 'blind';
 
 .btn {
-    background-color: black;
-    padding: .3rem .5rem;
-    transition: 500ms;
-
     &.btn-lg {
         border-width: 1px;
         padding: .75rem 1.5rem;
