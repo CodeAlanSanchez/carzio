@@ -15,7 +15,8 @@ export const About = () => {
                     correction.
                 </p>
                 <p className="about-text">
-                    Get in contact with us (1-800-000-0000 or support@carzio.com) and we can give you an estimate on all
+                    Get in contact with us ( +1 (262) 279-7914 or support@carzio.com) and we can give you an estimate on
+                    all
                     your needs.
                 </p>
                 <hr className="section-separator"/>
